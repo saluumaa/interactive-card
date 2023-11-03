@@ -1,0 +1,139 @@
+/* 
+* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+body {
+    width: 100%;
+    overflow: auto;
+}
+
+.desktop-back-image {
+    display: none;
+}
+
+.cards-container, form, .cards-container__expiry-cvv, .cards  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cards-container {
+    border: white;
+    background: url('./images/bg-main-mobile.png');
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+.cards-container-form, input {
+    padding: 10px;
+    width: 90%;
+    border-radius: 10px;
+    
+}
+
+.submit-btn {
+    margin-top: 15px;
+    background-color: rgb(67, 0, 96);
+    color: #fff;
+    padding: 15px;
+    width: 90%;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px; 
+  }
+  
+  .card {
+    width: 300px;
+    height: 180px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+  }
+  
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; 
+  }
+  
+  .card-front {
+    transform: rotateY(0deg);
+  }
+  
+  .card-back {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front-image,
+  .card-back-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card__front--info__name,
+  .card__front--info__number,
+  .card__front--info__expiry,
+  .card-back-info-cvv {
+    position: absolute;
+    color: #fff; 
+    font-size: 16px;
+  }
+  
+  .card__front--info__name {
+    top: 20px;
+    left: 20px;
+  }
+  
+  .card__front--info__number {
+    top: 70px;
+    left: 20px;
+  }
+  
+  .card__front--info__expiry {
+    top: 100px;
+    left: 20px;
+  }
+  
+  .card-back-info-cvv {
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+  }
+
+@media screen and (min-width:768px) {
+    .cards-container{
+        flex-direction: row;
+        justify-content:safe;
+        margin: auto;
+        height: 100%;
+    }
+
+    .cards-container-form form {
+        width: 50%;
+        margin: auto;
+    }
+
+    .desktop-back-image {
+      display: flex;
+      height: 100vh;
+    }
+
+    .mobile-back-image {
+        display: none;
+    }
+    
+} */
